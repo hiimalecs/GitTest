@@ -18,9 +18,11 @@ if(isset($_POST['submit']))
 	$link->query($query);
 	$link->close();
 	
-    echo "Hello : <b> $name $surname </b><br>";
-	echo "<br>Thank you, your name has been registered.<br>";
-    echo "<br>You can use the following form again to enter a new name.<br>";
+    echo "
+			Hello : <b> $name $surname </b><br>
+			<br>Thank you, your name has been registered.<br>
+			<br>You can use the following form again to enter a new name.<br>
+	";
 	
 }
 echo"<div style='position: absolute;top: 50%; -ms-transform: translateY(-50%);transform: translateY(-50%);left: 50%; -ms-transform: translateX(-50%);transform: translateX(-50%);'>
